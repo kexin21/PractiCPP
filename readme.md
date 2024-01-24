@@ -16,9 +16,10 @@ fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=1024)
 ```
 This script converts a peptide sequence into a molecular representation and then computes its Morgan fingerprint.
 
-ID-Target File
+### ID-Target File
 This is a CSV file containing peptide IDs and their corresponding target labels. The labels are binary, where '0' denotes non-CPPs and '1' signifies CPPs.
 
-## Hyperparameter Tuning
+## Running and Hyperparameter Tuning
+After preparing above three files, you can start training the model by running main.py.
 When dealing with imbalanced data, the hyperparameters K and N require tuning. For balanced datasets, a starting point can be setting both K and N to 1.
 
